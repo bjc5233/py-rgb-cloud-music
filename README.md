@@ -21,6 +21,11 @@
 
 
 
+
+## 更新
+* 2018-02-04 20:48:43 保存云音乐窗口位置; 重新打开后恢复到原窗口位置
+
+
 ## 演示
 <div align=center><img src="https://github.com/bjc5233/py-rgb-cloud-music/raw/master/resources/demo.png"/></div>
 

@@ -32,10 +32,10 @@ def rgb_2_hsl(rgb):
     return tuple(pyrgb.rgb_hsl(rgb[0], rgb[1], rgb[2]))
 
 def cloud_music_close():
-    os.system('taskkill /f /im cloudmusic.exe')
+    os.system(os.getcwd() + '\\winPos\\winPos.ahk OrpheusBrowserHost save')
 
 def cloud_music_open():
-    os.system('start cloudmusic')
+    os.system(os.getcwd() + '\\winPos\\winPos.ahk OrpheusBrowserHost recover')
 
 def cloud_music_update_skin(hsl):
     conn = sqlite3.connect(local_appdata + '\\Netease\\CloudMusic\\webapp\\Local Storage\\orpheus_orpheus_0.localstorage')
