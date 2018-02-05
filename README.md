@@ -17,7 +17,7 @@
 ## 注意
 * 使用到ahk脚本调整窗口位置，需要安装autoHotKey软件
 * 使用到第三方模块[pyrgb](https://github.com/Moduland/pyrgb), 需要先[pip install pyrgb]
-* 为方便双击执行，设置.py文件默认打开程序为[C:\Users\Admin\AppData\Local\Programs\Python\Python36\python.exe]
+* 为方便执行，使用[rgbCloudMusic.bat]
 * 执行后，会自动关闭网易云音乐，设置成功后，自动重新打开
 
 
@@ -28,6 +28,9 @@
 
 
 ## 演示
+<div align=center><img src="https://github.com/bjc5233/py-rgb-cloud-music/raw/master/resources/demo.gif"/></div>
+
+
 <div align=center><img src="https://github.com/bjc5233/py-rgb-cloud-music/raw/master/resources/demo.png"/></div>
 
 

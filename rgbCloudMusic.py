@@ -7,6 +7,7 @@ import sqlite3
 import os
 import sys
 import random
+import time
 local_appdata = os.environ.get('LOCALAPPDATA')
 
 
@@ -32,9 +33,11 @@ def rgb_2_hsl(rgb):
     return tuple(pyrgb.rgb_hsl(rgb[0], rgb[1], rgb[2]))
 
 def cloud_music_close():
+    print('cloud music close')
     os.system(os.getcwd() + '\\winPos\\winPos.ahk OrpheusBrowserHost save')
 
 def cloud_music_open():
+    print('cloud music open')
     os.system(os.getcwd() + '\\winPos\\winPos.ahk OrpheusBrowserHost recover')
 
 def cloud_music_update_skin(hsl):
@@ -55,6 +58,7 @@ def process(argv):
         mode = int(argv[0])
 
 
+    print('mode:', mode)
     if mode == 0:
         rgb = [int(argv[1]), int(argv[2]), int(argv[3])]
     elif mode == 1:
@@ -64,10 +68,13 @@ def process(argv):
         rgb = get_img_dominant_color(desk_wallpaper)
     else:
         rgb = get_random_color()
+    print('rgb:', rgb)
 
     hsl = rgb_2_hsl(rgb)
+    print('hsl:', hsl)
     cloud_music_close()
     cloud_music_update_skin(hsl)
+    time.sleep(1)
     cloud_music_open()
 
 

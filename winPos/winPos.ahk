@@ -23,8 +23,8 @@ if (operate="save") {
     }
     else
     {
-        X := A_ScreenWidth/2
-        Y := A_ScreenHeight/2
+        X := A_ScreenWidth/3
+        Y := A_ScreenHeight/3
     }
     IniWrite, %X%, %tempPath%, %className%, x
     IniWrite, %y%, %tempPath%, %className%, y
@@ -36,6 +36,7 @@ if (operate="save") {
         return ;指定的程序未记录窗口位置
 
     Run, cloudmusic
+    Sleep, 200
     if (X!="NULL" or Y!="NULL") {
         WinWaitActive, ahk_class %className%
         WinMove, %X%, %Y%

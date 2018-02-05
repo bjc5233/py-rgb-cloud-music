@@ -1,1 +1,1 @@
-@python ticktickTask.py %*
+python rgbCloudMusic.py %*
