@@ -15,7 +15,6 @@
 
 
 ## 注意
-* 使用到ahk脚本调整窗口位置，需要安装autoHotKey软件
 * 使用到第三方模块[pyrgb](https://github.com/Moduland/pyrgb), 需要先[pip install pyrgb]
 * 为方便执行，使用[rgbCloudMusic.bat]
 * 执行后，会自动关闭网易云音乐，设置成功后，自动重新打开
@@ -24,7 +23,6 @@
 
 
 ## 更新
-* 2018-02-04 20:48:43 保存云音乐窗口位置; 重新打开后恢复到原窗口位置
 
 
 ## 演示
